@@ -4,22 +4,21 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# Ocean-UI System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.ocean.version=$(OCEAN_VERSION) \
+    ro.ocean.releasetype=$(OCEAN_BUILDTYPE) \
+    ro.ocean.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(OCEAN_VERSION) \
 
-# LineageOS Platform Display Version
+# Ocean-UI Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.ocean.display.version=$(OCEAN_DISPLAY_VERSION)
 
-# LineageOS Platform SDK Version
+# Ocean-UI Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
+    ro.ocean.build.version.plat.sdk=$(OCEAN_PLATFORM_SDK_VERSION)
 
-# LineageOS Platform Internal Version
+# DroidX-UI Platform Internal Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.ocean.build.version.plat.rev=$(OCEAN_PLATFORM_REV)
