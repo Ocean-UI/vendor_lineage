@@ -16,7 +16,9 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-OCEAN_TARGET_PACKAGE := $(PRODUCT_OUT)/ocean-$(OCEAN_VERSION).zip
+ifeq ($(OCEAN_ZIP_TYPE), Gapps)
+	OCEAN_TARGET_PACKAGE := $(PRODUCT_OUT)/ocean-$(OCEAN_VERSION)-Gapps.zip
+else 
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
