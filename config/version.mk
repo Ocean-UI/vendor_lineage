@@ -17,10 +17,14 @@ ifndef OCEAN_BUILDTYPE
     endif
 endif
 
-# Filter out random types, so it'll reset to UNOFFICIAL
-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(OCEAN_BUILDTYPE)),)
-    OCEAN_BUILDTYPE := UNOFFICIAL
-    OCEAN_EXTRAVERSION :=
+# Check Official
+ifeq ($(OCEAN_BUILD_TYPE), OFFICIAL)
+  LIST = $(shell cat vendor/ocean/ocean.devices)
+    ifeq ($(filter $(OCEAN_BUILD), $(LIST)), $(OCEAN_BUILD))
+      OCEAN_BUILD_TYPE := OFFICIAL
+    else 
+      OCEAN_BUILD_TYPE := UNOFFICIAL
+    endif
 endif
 
 ifeq ($(OCEAN_BUILDTYPE), UNOFFICIAL)
