@@ -9,7 +9,7 @@ OCEAN_ZIP_TYPE := Vanilla
 
 # Gapps
 ifeq ($(OCEAN_GAPPS), true)
-    $(call inherit-product, vendor/gms/gms_full.mk)
+    $(call inherit-product, vendor/gms/common-vendor.mk)
     OCEAN_ZIP_TYPE := Gapps
 endif
 
