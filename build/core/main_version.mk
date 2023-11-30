@@ -6,7 +6,7 @@ endif
 
 # Ocean-UI System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.ocean.version=$(OCEAN_VERSION) \
+    ro.ocean.version=$(OCEAN_DISPLAY_VERSION_CODENAME) \
     ro.ocean.releasetype=$(OCEAN_BUILDTYPE) \
     ro.ocean.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(OCEAN_VERSION) \
