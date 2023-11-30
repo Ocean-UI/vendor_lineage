@@ -188,3 +188,4 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 include vendor/ocean/config/version.mk
 include vendor/ocean/config/bootanimation.mk
+include vendor/ocean/config/telephony.mk
