@@ -171,7 +171,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/ocean/overlay/common \
+    vendor/ocean/overlay/common
 
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
